@@ -313,6 +313,7 @@ header {
   margin-top: 20px;
   font-size: 15px;
   color: black;
+  line-height: 1cm;
 }
 
 .txt-contents-about {
@@ -322,6 +323,7 @@ header {
   margin-top: 20px;
   font-size: 16px;
   color: black;
+  line-height: 1cm;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
