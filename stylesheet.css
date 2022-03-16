@@ -1,0 +1,409 @@
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+@media (min-width: 960px) {
+  body {
+    font-family: "Lucida Grande";
+  }
+}
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Write your code below */
+.top-wrapper {
+  background-image: url("image/header-bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: right;
+  color: white;
+}
+
+.top-wrapper .intro-text {
+  padding-top: 150px;
+  padding-bottom: 300px;
+}
+.top-wrapper .intro-text .intro-lead {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 65px;
+  line-height: 40px;
+  margin-bottom: 25px;
+}
+.top-wrapper .intro-text .intro-heading {
+  font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 75px;
+  margin-bottom: 50px;
+  position: relative;
+}
+.top-wrapper .intro-text .intro-heading > span {
+  color: firebrick;
+}
+.top-wrapper .intro-heading::before,
+.intro-heading::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.intro-anim {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: "Source Code Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+}
+.wrapper {
+  display: inline-flex;
+  margin-bottom: 50px;
+}
+.wrapper .static-txt {
+  color: white;
+}
+.wrapper .dynamic-txts {
+  margin-top: 1px;
+  margin-left: 15px;
+  line-height: 45px;
+  height: 45px;
+  overflow: hidden;
+}
+.wrapper .dynamic-txts li {
+  color: red;
+  position: relative;
+  width: max-content;
+  top: 0;
+  animation: slide 15s steps(5) infinite;
+}
+@keyframes slide {
+  100% {
+    top: -225px;
+  }
+}
+.wrapper .dynamic-txts li span {
+  position: relative;
+}
+.wrapper .dynamic-txts li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 110%;
+  width: 100%;
+  background-color: rgb(15, 15, 15);
+  border-left: 2px solid red;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%,
+  60% {
+    left: calc(100% + 45px);
+  }
+  100% {
+    left: 0;
+  }
+}
+
+.btn-xl {
+  color: dimgray;
+  background-color: gainsboro;
+  border-color: gainsboro;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 3px;
+  font-size: 18px;
+  padding: 15px 30px;
+}
+.btn-xl:hover,
+.btn-xl:focus,
+.btn-xl:active {
+  color: black;
+  background-color: darkgray;
+  border-color: darkgray;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(69, 69, 69, 0.9);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-top: 7px;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-list {
+  float: right;
+}
+
+.header-list li {
+  float: left;
+  padding: 25px 20px;
+  color: white;
+}
+
+.header-list li:hover {
+  float: left;
+  color: rgb(207, 207, 207);
+}
+
+.header-list li:active {
+  float: left;
+  color: rgb(207, 207, 207);
+}
+
+.header-list li .active {
+  float: left;
+  color: rgb(207, 207, 207);
+}
+
+.header-list a {
+  color: white;
+}
+
+.header-list a:hover {
+  color: rgb(207, 207, 207);
+}
+
+.header-list a:active {
+  color: rgb(207, 207, 207);
+}
+
+.about-wrapper {
+  height: 400px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+#about-wrapper {
+  height: 400px;
+  padding-bottom: 30px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.team-wrapper {
+  height: 300px;
+  padding-bottom: 100px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+#team-wrapper {
+  height: 300px;
+  padding-bottom: 100px;
+  margin-top: 120px;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.heading {
+  padding-top: 60px;
+  padding-bottom: 30px;
+  color: #5f5d60;
+}
+
+.heading h2 {
+  font-weight: normal;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* About us */
+.about {
+  float: left;
+  width: 50%;
+}
+
+.about-icon {
+  position: relative;
+}
+
+.about-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.team {
+  float: left;
+  width: 20%;
+}
+
+.team-icon {
+  position: relative;
+}
+
+.main {
+  background-color: transparent;
+}
+
+.team-icon p {
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.txt-contents {
+  width: 80%;
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+
+.txt-contents-about {
+  width: 80%;
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+  font-size: 16px;
+  color: #b3aeb5;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.heading h3 {
+  font-weight: normal;
+}
+
+.contact-wrapper {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 80px;
+  text-align: center;
+}
+
+#contact-wrapper {
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+.message {
+  padding: 15px 40px;
+  background-color: #5dca88;
+  cursor: pointer;
+  box-shadow: 0 7px #1a7940;
+}
+
+/* Add CSS for message when it's clicked */
+.message :active {
+  box-shadow: none;
+  position: relative;
+  top: 7px;
+}
+
+input,
+textarea {
+  width: 60%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  font-size: 18px;
+  border: 1px solid #dee7ec;
+}
+
+.contact-submit {
+  background-color: #dee7ec;
+  color: #889eab;
+}
+
+/* Add CSS for <img> tags inside the <footer> */
+footer img {
+  width: 125px;
+}
+
+/* Add CSS for <p> tags inside the <footer> */
+footer p {
+  color: rgba(37, 133, 223, 0.9);
+  font-size: 16px;
+}
+
+.top {
+  text-decoration: none;
+  padding: 15px;
+  color: #fff;
+  background: rgb(22, 146, 218);
+  border-radius: 100px;
+  margin-bottom: 20px;
+  float: right;
+}
+
+/* Add CSS for <footer> tags */
+footer {
+  padding-top: 20px;
+  height: 65px;
+  width: 100%;
+  background-color: #f1f1f1;
+  top: 0;
+  z-index: 10;
+}
+
+.footer-left {
+  float: left;
+}
+
+.footer-right {
+  float: right;
+}
